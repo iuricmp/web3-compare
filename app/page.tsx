@@ -1,94 +1,46 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+    <main className="flex min-h-screen flex-col items-center p-4">
+      <h1 className="p-24">Web3 Library Comparison (web3-compare)</h1>
+      <div className="flex items-center justify-center">
+        <table className="table-auto">
+          <thead>
+            <tr>
+              <th className="px-4 py-2">Library</th>
+              <th className="px-4 py-2">Chain</th>
+              <th className="px-4 py-2">Method</th>
+              <th className="px-4 py-2">Response Type</th>
+              <th className="px-4 py-2">Response Sample</th>
+              <th className="px-4 py-2">Sample Code</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="border px-4 py-2">
+                <a
+                  href="https://npmjs.com/package/@gnolang/gno-js-client"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  @gnolang/gno-js-client
+                </a>
+              </td>
+              <td className="border px-4 py-2">Gno.land</td>
+              <td className="border px-4 py-2">
+                <p className="json-style">getBalance</p>
+              </td>
+              <td className="border px-4 py-2">
+                <p className="json-style">number</p>
+              </td>
+              <td className="border px-4 py-2">
+                <p className="json-style">9790000000</p>
+              </td>
+              <td className="border px-4 py-2">
+                <a href="/balance/gno">sample</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
   );
