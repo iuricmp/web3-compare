@@ -3,7 +3,7 @@ export default function Home() {
     <div className="container mx-auto my-8 overflow-x-scroll">
       <div className="mx-auto">
         <h1>getBalance</h1>
-        <table className="table-fixed w-full">
+        <table className="table-auto w-full">
           <thead>
             <tr>
               <th className="px-4 py-2">Library</th>
