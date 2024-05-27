@@ -124,5 +124,5 @@ a:hover {
   white-space: pre-wrap;
   word-wrap: break-word;
   overflow: auto;
-  text-align: center;
+  text-align: left;
 }

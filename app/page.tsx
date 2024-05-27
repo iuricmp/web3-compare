@@ -1,13 +1,8 @@
 export default function Home() {
   return (
-    <div
-      className="container mx-auto my-8 overflow-x-scroll"
-      style={{ width: "2000px" }}
-    >
-      <main className="flex min-h-screen flex-col items-center p-4">
-        <h1 className="p-24">Web3 Library Comparison (web3-compare)</h1>
-        <div className="container mx-auto my-8">
-          <div className="flex items-center justify-center">
+    <div className="container mx-auto my-8 overflow-x-scroll">
+        <div className="mx-auto">
+          <h1>getBalance</h1>
             <table className="table-auto">
               <thead>
                 <tr>
@@ -45,7 +40,7 @@ export default function Home() {
                   </td>
                 </tr>
                 <tr className="border px-4 py-2">
-                  <td className="border px-4 py-2">wagmi</td>
+                  <td className="border px-4 py-2">wagmi / viem</td>
                   <td className="border px-4 py-2">Ethereum</td>
                   <td className="border px-4 py-2">
                     <p className="json-style">getBalance</p>
@@ -54,17 +49,40 @@ export default function Home() {
                     <p className="json-style">Object</p>
                   </td>
                   <td className="border px-4 py-2">
-                    <p className="json-style">{`{"decimals":18,"formatted":"22.760036845242167424","symbol":"ETH","value":"22760036845242167424"}`}</p>
+                    <p className="json-style">{JSON.stringify({"decimals":18,"formatted":"22.760036845242167424","symbol":"ETH","value":"22760036845242167424"}, null, 2)}</p>
                   </td>
                   <td className="border px-4 py-2">
                     <a href="/balance/wagmi">sample</a>
+                    <a href="https://wagmi.sh/core/api/actions/getBalance#getbalance">docs</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border px-4 py-2">
+                    <a
+                      href="https://npmjs.com/package/@gnolang/gnonative"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      @gnolang/gnonative
+                    </a>
+                  </td>
+                  <td className="border px-4 py-2">Gno.land</td>
+                  <td className="border px-4 py-2">
+                    <p className="json-style">getBalance</p>
+                  </td>
+                  <td className="border px-4 py-2">
+                    <p className="json-style">number</p>
+                  </td>
+                  <td className="border px-4 py-2">
+                    <p className="json-style">{JSON.stringify({"accountInfo":{"address":"o0sZ1ZkrVp5FTS5LbMci+ii98xk=","coins":[{"denom":"ugnot","amount":"9786000000"}],"pubKey":"ChMvdG0uUHViS2V5U2VjcDI1NmsxEiMKIQNY5MlpZfA98zIWR8L0vFnINS7e6Do+uH06+fczPe43Hg==","accountNumber":"101","sequence":"5"}}, null, 2)}</p>
+                  </td>
+                  <td className="border px-4 py-2">
+                    <a href="/balance/gno">sample</a>
                   </td>
                 </tr>
               </tbody>
             </table>
-          </div>
         </div>
-      </main>
     </div>
   );
 }
