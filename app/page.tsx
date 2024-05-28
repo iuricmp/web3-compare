@@ -34,7 +34,7 @@ const LandingPage = () => {
           easily integrated and maintained.
         </p>
 
-        <h3 className="text-xl font-bold mb-2">Issues to be Created</h3>
+        <h3 className="text-xl font-bold mb-2">Issues</h3>
         <ul className="list-disc list-inside mb-4">
           <li>
             Discussion on{" "}
@@ -44,11 +44,14 @@ const LandingPage = () => {
             Method for GnoLandClient Interface
           </li>
           <li>
-            Discussion on <code>connect</code> Method for GnoLandClient
-            Interface
+            Discussion on{" "}
+            <code>
+              <a href="#asdf">getAccount</a>
+            </code>{" "}
+            Method for GnoLandClient Interface
           </li>
           <li>
-            Discussion on <code>getAccount</code> Method for GnoLandClient
+            Discussion on <code>connect</code> Method for GnoLandClient
             Interface
           </li>
           <li>
