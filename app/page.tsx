@@ -37,39 +37,16 @@ const LandingPage = () => {
         <h3 className="text-xl font-bold mb-2">Issues</h3>
         <ul className="list-disc list-inside mb-4">
           <li>
-            Discussion on{" "}
-            <code>
-              <a href="#asdf">getBalance</a>
-            </code>{" "}
-            Method for GnoLandClient Interface
+            <a href="/balance">getBalance</a>
           </li>
           <li>
-            Discussion on{" "}
-            <code>
-              <a href="#asdf">getAccount</a>
-            </code>{" "}
-            Method for GnoLandClient Interface
+            <a href="account">getAccount</a>
           </li>
-          <li>
-            Discussion on <code>connect</code> Method for GnoLandClient
-            Interface
-          </li>
-          <li>
-            Discussion on <code>sendTransaction</code> Method for GnoLandClient
-            Interface
-          </li>
-          <li>
-            Discussion on <code>queryState</code> Method for GnoLandClient
-            Interface
-          </li>
-          <li>
-            Discussion on <code>subscribe</code> Method for GnoLandClient
-            Interface
-          </li>
-          <li>
-            Discussion on <code>disconnect</code> Method for GnoLandClient
-            Interface
-          </li>
+          <li>connect</li>
+          <li>sendTransaction</li>
+          <li>queryState</li>
+          <li>subscribe</li>
+          <li>disconnect</li>
         </ul>
 
         <p className="text-gray-700">
